@@ -3,17 +3,9 @@ using UnityEngine.UI;
 
 namespace Code.UI.Utilities
 {
-    /// <summary>
-    /// Обновление позиции скроллбара после загрузки контента
-    /// </summary>
-    public class ScrollRectReloader : MonoBehaviour
+    public class ScrollRectCorrector : MonoBehaviour
     {
         [SerializeField] private ScrollRect _scrollRect;
-
-        private void OnEnable()
-        {
-            Reload();
-        }
 
         public void Reload()
         {

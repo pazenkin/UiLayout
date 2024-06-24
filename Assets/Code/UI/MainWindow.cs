@@ -18,14 +18,6 @@ public class MainWindow : BaseWindow
         _button2.onClick.AddListener(Inventory2);
     }
 
-    protected override void OnShow(object[] args)
-    {
-    }
-
-    protected override void OnHide()
-    {
-    }
-
     string MakeTitle(int index)
     {
         return index % 2 == 1 ? $"Title {index}" : $"A Very long long Title {index}";
